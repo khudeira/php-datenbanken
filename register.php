@@ -40,7 +40,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
 
             if ($stmt->execute()) {
                 $_SESSION['success'] = "Registrierung erfolgreich. Sie können sich jetzt anmelden.";
-                header("Location: login.html"); // Umleitung zur Login-Seite
+                header("Location: index.html"); // Umleitung zur Login-Seite
             } else {
                 $errors[] = "Es gab ein Problem bei der Registrierung. Versuchen Sie es später erneut.";
             }
